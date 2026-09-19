@@ -1,0 +1,12 @@
+{
+    "name": "php/poo-exercicios1",
+    "description": "Lista de exercícios 1",
+    "require": {
+        "php": "^8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
