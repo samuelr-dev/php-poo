@@ -1,0 +1,16 @@
+{
+    "name": "samuel/06-classes-lista-2",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Samuel Rodrigues",
+            "email": "contatosamuelrodrigues@outlook.com"
+        }
+    ],
+    "require": {}
+}
