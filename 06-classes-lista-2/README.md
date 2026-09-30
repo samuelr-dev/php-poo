@@ -16,15 +16,15 @@ Segunda lista de exercícios de modelagem de classes, com foco em encapsulamento
 
 | Nº | Arquivo de teste | Classe | Descrição |
 |---|---|---|---|
-| 1 | `ex1-retangulo.php` | `Retangulo` | Área, perímetro, verificação de quadrado e redimensionamento, com validação das dimensões |
-| 2 | `ex2-temperatura.php` | `Temperatura` | Conversão entre Celsius, Fahrenheit e Kelvin, com validação do zero absoluto |
-| 3 | `ex3-ingressoCinema.php` | `IngressoCinema` | Valor final de um ingresso, integral ou com meia-entrada |
-| 4 | `ex4-cronometro.php` | `CronometroTreino` | Tempo acumulado de treino, com soma de valores positivos e formatação em HH:MM:SS |
-| 5 | `ex5-triangulo.php` | `Triangulo` | Validação da desigualdade triangular, classificação (equilátero, isósceles, escaleno ou inválido) e perímetro |
-| 6 | `ex6-ticket.php` | `TicketEstacionamento` | Duração e valor de uma permanência, com tarifa por hora arredondada para cima |
-| 7 | `ex7-semaforo.php` | `Semaforo` | Sequência de cores vermelho, verde e amarelo, com contagem de ciclos completos |
-| 8 | `ex8-lampadaInteligente.php` | `LampadaInteligente` | Liga, desliga e ajuste de intensidade entre 0 e 100 |
-| 9 | `ex9-personagem.php` | `PersonagemRPG` | Vida e energia limitadas entre 0 e 100, dano, cura, uso de habilidade e descanso |
+| 1 | `ex01-retangulo.php` | `Retangulo` | Área, perímetro, verificação de quadrado e redimensionamento, com validação das dimensões |
+| 2 | `ex02-temperatura.php` | `Temperatura` | Conversão entre Celsius, Fahrenheit e Kelvin, com validação do zero absoluto |
+| 3 | `ex03-ingressoCinema.php` | `IngressoCinema` | Valor final de um ingresso, integral ou com meia-entrada |
+| 4 | `ex04-cronometro.php` | `CronometroTreino` | Tempo acumulado de treino, com soma de valores positivos e formatação em HH:MM:SS |
+| 5 | `ex05-triangulo.php` | `Triangulo` | Validação da desigualdade triangular, classificação (equilátero, isósceles, escaleno ou inválido) e perímetro |
+| 6 | `ex06-ticket.php` | `TicketEstacionamento` | Duração e valor de uma permanência, com tarifa por hora arredondada para cima |
+| 7 | `ex07-semaforo.php` | `Semaforo` | Sequência de cores vermelho, verde e amarelo, com contagem de ciclos completos |
+| 8 | `ex08-lampadaInteligente.php` | `LampadaInteligente` | Liga, desliga e ajuste de intensidade entre 0 e 100 |
+| 9 | `ex09-personagem.php` | `PersonagemRPG` | Vida e energia limitadas entre 0 e 100, dano, cura, uso de habilidade e descanso |
 | 10 | `ex10-cofrinho.php` | `CofrinhoMeta` | Depósitos, retiradas e progresso em relação a uma meta de economia |
 | 11 | `ex11-cartao.php` | `CartaoTransporte` | Recarga de crédito e embarques, descontando a tarifa apenas com saldo suficiente |
 | 12 | `ex12-hidrometro.php` | `Hidrometro` | Registro de leituras sucessivas e cálculo do consumo do período |
@@ -43,15 +43,15 @@ Segunda lista de exercícios de modelagem de classes, com foco em encapsulamento
 06-classes-lista-2/
 ├── composer.json
 ├── composer.lock
-├── ex1-retangulo.php
-├── ex2-temperatura.php
-├── ex3-ingressoCinema.php
-├── ex4-cronometro.php
-├── ex5-triangulo.php
-├── ex6-ticket.php
-├── ex7-semaforo.php
-├── ex8-lampadaInteligente.php
-├── ex9-personagem.php
+├── ex01-retangulo.php
+├── ex02-temperatura.php
+├── ex03-ingressoCinema.php
+├── ex04-cronometro.php
+├── ex05-triangulo.php
+├── ex06-ticket.php
+├── ex07-semaforo.php
+├── ex08-lampadaInteligente.php
+├── ex09-personagem.php
 ├── ex10-cofrinho.php
 ├── ex11-cartao.php
 ├── ex12-hidrometro.php
@@ -90,7 +90,7 @@ Segunda lista de exercícios de modelagem de classes, com foco em encapsulamento
 
 ```bash
 composer install
-php ex1-retangulo.php
+php ex01-retangulo.php
 ```
 
 O comando `composer install` gera o diretório `vendor/` com o autoloader (mapeamento PSR-4 do namespace `App\` para `src/`). O diretório não é versionado. Troque o nome do arquivo para rodar cada exercício individualmente.
