@@ -12,11 +12,12 @@ Exercícios e Projetos desenvolvidos na disciplina de Programação Orientada a 
 | [04-primeiras-classes](./04-primeiras-classes) | Primeiras classes, construtores, namespaces e autoload PSR-4 | Não interativa |
 | [05-classes-lista-1](./05-classes-lista-1) | Lista com 10 exercícios de classes: encapsulamento, validação e exceções | Não interativa |
 | [06-classes-lista-2](./06-classes-lista-2) | Lista com 20 exercícios de classes: regras de negócio, controle de estado e modelagem livre | Não interativa |
+| [07-composicao-lista-3](./07-composicao-lista-3) | Lista individual com 10 exercícios: abstração, encapsulamento e composição entre objetos | Não interativa |
 
 ## Requisitos
 
 - PHP 8.4 ou superior (versão definida nos arquivos `composer.json`)
-- [Composer](https://getcomposer.org/), necessário nas pastas 04, 05 e 06
+- [Composer](https://getcomposer.org/), necessário nas pastas 04, 05, 06 e 07
 
 ## Como executar
 
@@ -42,19 +43,29 @@ Pasta 06 (utiliza o autoload do Composer, um arquivo de teste por exercício):
 ```bash
 cd 06-classes-lista-2
 composer install
-php ex1-retangulo.php
+php ex01-retangulo.php
 ```
+
+Pasta 07 (cada exercício é um projeto independente, com seu próprio `composer.json`):
+
+```bash
+cd 07-composicao-lista-3/ex01
+composer install
+php index.php
+```
+
+Repita o `composer install` em cada uma das pastas `ex01` a `ex10`.
 
 O diretório `vendor/` não é versionado. O comando `composer install` gera o autoloader a partir do `composer.json`.
 
 ## Estrutura
 
-Cada pasta contém um `README.md` com a descrição dos exercícios. As pastas 01 a 03 têm um único arquivo `index.php`. As pastas 04 e 05 possuem ainda `composer.json`, `composer.lock` e o diretório `src/`, com uma classe por arquivo, e um único `index.php` de teste. A pasta 06 segue a mesma estrutura de `composer.json`, `composer.lock` e `src/`, mas com um arquivo de teste por exercício (`ex1-retangulo.php` a `ex20-astronauta.php`), em vez de um único `index.php`.
+Cada pasta contém um `README.md` com a descrição dos exercícios. As pastas 01 a 03 têm um único arquivo `index.php`. As pastas 04 e 05 possuem ainda `composer.json`, `composer.lock` e o diretório `src/`, com uma classe por arquivo, e um único `index.php` de teste. A pasta 06 segue a mesma estrutura de `composer.json`, `composer.lock` e `src/`, mas com um arquivo de teste por exercício (`ex01-retangulo.php` a `ex20-astronauta.php`), em vez de um único `index.php`. A pasta 07 é diferente das demais: cada exercício (`ex01` a `ex10`) é um projeto PHP independente, com seu próprio `composer.json` e seu próprio `src/`, e o README fica só na raiz da pasta `07-composicao-lista-3`, com as informações de identificação pedidas no enunciado.
 
 ## Observações sobre o desenvolvimento
 
 - Os exercícios foram desenvolvidos localmente ao longo do semestre, sem controle de versão. O repositório foi criado depois, para organizar e publicar o material. Por isso, o histórico de commits reflete a organização do conteúdo, e não a ordem em que os exercícios foram escritos.
-- Por solicitação do professor, o código executável de cada atividade das pastas 01 a 05 fica em um único arquivo `index.php`. Nas pastas 04 e 05, as classes ficam em arquivos próprios dentro de `src/`, e o `index.php` funciona como script de demonstração e testes. Na pasta 06, cada exercício tem seu próprio arquivo de teste, conforme pedido na atividade.
+- Por solicitação do professor, o código executável das atividades das pastas 01 a 05 fica em um único arquivo `index.php`. Nas pastas 04 e 05, as classes ficam em arquivos próprios dentro de `src/`, e o `index.php` funciona como script de demonstração e testes. Na pasta 06, cada exercício tem seu próprio arquivo de teste, conforme pedido na atividade. Na pasta 07, cada exercício é isolado em seu próprio mini-projeto, também conforme pedido na atividade.
 - O código é o mesmo que foi desenvolvido para a disciplina. Foram alterados apenas os nomes e a organização das pastas.
 
 ## Autor
